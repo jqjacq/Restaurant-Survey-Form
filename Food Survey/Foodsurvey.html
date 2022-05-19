@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="src/style.css">
+        <title>Food Survey</title>
+    </head>
+    <body>
+        <form id="survey-form">
+            <legend id="title"><h1>Restaurant Survey Form</h1></legend>
+                <p id="description"> Please complete the survey to help us improve our service for you. Thank you. </p>
+                    <label for="name" >
+                    Full Name: </label><br>
+                        <input type="text" id="name" name="name" class ="info" 
+                        placeholder = "John Doe">
+                        <br>
+                    <label for="phone">
+                    Phone Number: </label>
+                        <br>
+                        <input type="tel" id="number" name="phonenumber"
+                        placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class ="info">
+                        <br>
+                    <label for="email">
+                    Email: </label>
+                        <br>
+                        <input type="email" id="email" name="email" class="info" 
+                        placeholder="John.Doe@gmail.com">
+                        <br><br>
+                    <label for="age" placeholder="[0-110]">
+                    Age: </label>
+                        <input type="radio" class="age" name="age">Under 18
+                        <input type="radio" class="age" name="age">19-34
+                        <input type="radio" class="age" name="age">55+
+                        <br><br>
+                    <label for="dineintakeout" id="dineout" name="dineout">
+                    Did you dine in or take out?</label>
+                        <br>
+                        <input type="radio" class="dineout" name="dineout"> Dine in
+                        <input type="radio" class="dineout" name="dineout"> Take out
+                        <br><br>
+                    <label for="visits" class="visits" name="visits">
+                    How often do you visit?</label><br>
+                        <input type="radio" class="visits" name="visits>"> More than 4 times
+                        <input type="radio" class="visits" name="visits>"> First time
+                        <input type="radio" class="visits" name="visits>"> 1-3 times
+                        <br><br>
+                    <label for="service" class="service" name="service">
+                    Please rate the quality of the service you received.</label>
+                        <span id="service-rate"></span>
+                        <br><br>
+                            <label for="foodquality" class="foodquality" name="foodquality">
+                            Please rate the quality of the food. </label>
+                            <span id="foodquality-rate"></span>
+                        <br><br>
+                            <label for="aboutus" class="aboutus" name="aboutus">
+                            How did you learn about us? (Check all that applies) <br></label>
+                            <textarea id="aboutTextArea" 
+                            placeholder="Specify others."></textarea>
+                    <label for="comment" id="comment" name="comment"></label><br><br>
+                    Any comments and suggestions?<br>
+                        <textarea 
+                        placeholder = "Comments and suggestions are greatly appreciated!"></textarea>
+                        <button id="submit-button" onclick="window.open('thankyou.html'), '_self'">Submit</button>
+            </form>
+        <script src="src/script.js"></script>
+    </body>
+</html>

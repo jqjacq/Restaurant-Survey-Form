@@ -1,0 +1,53 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: center;
+}
+input {
+    padding: 5px;
+    margin: 2px 5px 2px 5px;
+}
+textarea {
+    resize: none;
+    height: 80px;
+    width: 100%;
+}
+.info {
+    width: 100%;
+}
+#title {
+    font-weight: bold;
+    text-align: center;
+}
+#description {
+    font-size: 15px;
+    font-style: italic;
+}
+#survey-form {
+    background-color:antiquewhite;
+    width: 75%;
+    justify-content: justify;
+    border: 2px solid black; 
+    margin: auto;
+    padding: 25px 100px 25px 100px;
+}
+#submit {
+    display: flex;
+}
+#aboutTextArea {
+    float: right;
+    width: 160px;
+    height: 20px;
+}
+
+
+@media only screen and (max-width: 650px) {
+    .aboutus, .age, .visits, .dineout {
+        display: inline-block;
+    }
+    #name, #number, #email {
+        width: 75%;
+    }
+    #survey-form { 
+        padding: 50px;
+    }
+}
