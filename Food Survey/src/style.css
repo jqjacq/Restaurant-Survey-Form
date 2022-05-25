@@ -9,10 +9,13 @@ input {
 textarea {
     resize: none;
     height: 80px;
-    width: 100%;
+    width: 60%;
 }
 .info {
-    width: 100%;
+    width: 25%;
+}
+label, #description {
+    font-weight: bold;
 }
 #title {
     font-weight: bold;
@@ -24,7 +27,7 @@ textarea {
 }
 #survey-form {
     background-color:antiquewhite;
-    width: 75%;
+    width: 70%;
     justify-content: justify;
     border: 2px solid black; 
     margin: auto;
@@ -33,14 +36,12 @@ textarea {
 #submit {
     display: flex;
 }
-#aboutTextArea {
-    float: right;
-    width: 160px;
-    height: 20px;
-}
 
 
 @media only screen and (max-width: 650px) {
+    form {
+        font-size: 12px;
+    }
     .aboutus, .age, .visits, .dineout {
         display: inline-block;
     }
@@ -49,5 +50,8 @@ textarea {
     }
     #survey-form { 
         padding: 50px;
+    }
+    textarea {
+        width: 100%;
     }
 }
